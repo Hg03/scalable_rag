@@ -3,6 +3,7 @@ secrets:
   QDRANT_API_KEY: ${oc.env:QDRANT_API_KEY}
   QDRANT_CLUSTER_ENDPOINT: ${oc.env:QDRANT_CLUSTER_ENDPOINT}
   GROQ_API_KEY: ${oc.env:GROQ_API_KEY}
+  REDIS_AGENT_MEMORY_API_KEY: ${oc.env:REDIS_AGENT_MEMORY_API_KEY}
 retrieve:
   top_k: 5
   sparse_top_k: 12
@@ -10,6 +11,9 @@ semantic_cache:
   LANGCACHE_API_KEY: ${oc.env:LANGCACHE_API_KEY}
   LANGCACHE_SERVER_URL: ${oc.env:LANGCACHE_SERVER_URL}
   LANGCACHE_CACHE_ID: ${oc.env:LANGCACHE_CACHE_ID}
+memory:
+  SERVER_URL: ${oc.env:REDIS_AGENT_SERVER_URL}
+  STORE_ID: ${oc.env:STORE_ID}
 llms:
   model: 'llama-3.3-70b-versatile'
   rewriter:

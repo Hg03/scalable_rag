@@ -3114,6 +3114,20 @@ wheels = [
 ]
 
 [[package]]
+name = "redis-agent-memory"
+version = "0.1.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "httpcore" },
+    { name = "httpx" },
+    { name = "pydantic" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/e1/a2/75d50a75d871d49b53f0e4aa4b03c3e4607f79ec7a0e291497ccffffc340/redis_agent_memory-0.1.1.tar.gz", hash = "sha256:e96cfa3713d9d526792296b72ed6a903c32307928e9e4512aea2fcc4079a1540", size = 59010, upload-time = "2026-06-26T10:31:36.45Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/36/3e/46131dbf96c2e76c132fe0aabc7b5712a21a2474ef53a40da6fe3661a67e/redis_agent_memory-0.1.1-py3-none-any.whl", hash = "sha256:08b988ecccd3faeffe4a521a7ccc9cd19135ca69ea6b0475cddfa01bfd4a7cb2", size = 109561, upload-time = "2026-06-26T10:31:34.92Z" },
+]
+
+[[package]]
 name = "referencing"
 version = "0.37.0"
 source = { registry = "https://pypi.org/simple" }
@@ -3429,6 +3443,7 @@ dependencies = [
     { name = "prek" },
     { name = "python-dotenv" },
     { name = "qdrant-client" },
+    { name = "redis-agent-memory" },
     { name = "rust-just" },
     { name = "sentence-transformers" },
     { name = "transformers" },
@@ -3451,6 +3466,7 @@ requires-dist = [
     { name = "prek", specifier = ">=0.4.8" },
     { name = "python-dotenv", specifier = ">=1.2.2" },
     { name = "qdrant-client", specifier = ">=1.18.0" },
+    { name = "redis-agent-memory", specifier = ">=0.1.1" },
     { name = "rust-just", specifier = ">=1.55.1" },
     { name = "sentence-transformers", specifier = ">=5.6.0" },
     { name = "transformers", specifier = ">=5.13.0" },
