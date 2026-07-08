@@ -1,1 +1,13 @@
+secrets:
+  HF_TOKEN: ${oc.env:HF_TOKEN}
+  QDRANT_API_KEY: ${oc.env:QDRANT_API_KEY}
+  QDRANT_CLUSTER_ENDPOINT: ${oc.env:QDRANT_CLUSTER_ENDPOINT}
+  GROQ_API_KEY: ${oc.env:GROQ_API_KEY}
+retrieve:
+  top_k: 5
+  sparse_top_k: 12
+llms:
+  rewriter: 'llama-3.3-70b-versatile'
+  rerank: 'llama-3.3-70b-versatile'
+  answer: 'llama-3.3-70b-versatile'
 model: 'xxx'
