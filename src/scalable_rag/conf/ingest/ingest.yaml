@@ -1,0 +1,19 @@
+secrets:
+  HF_TOKEN: ${oc.env:HF_TOKEN}
+  QDRANT_API_KEY: ${oc.env:QDRANT_API_KEY}
+  QDRANT_CLUSTER_ENDPOINT: ${oc.env:QDRANT_CLUSTER_ENDPOINT}
+path:
+  docs: src/scalable_rag/data/
+parse:
+  ocr_enabled: False
+  output_format: markdown
+chunk:
+  tokenizer_model: 'sentence-transformers/all-MiniLM-L6-v2'
+  chunk_size: 
+  max_tokens: 256
+  overlap: 20
+embed:
+  model: 'sentence-transformers/all-MiniLM-L6-v2'
+vector_store:
+  collection_name: scalable_rag
+  dimensions: 384

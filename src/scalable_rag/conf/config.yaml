@@ -1,0 +1,3 @@
+defaults:
+  - ingest: ingest
+  - generate: generate
