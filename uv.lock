@@ -1435,6 +1435,20 @@ wheels = [
 ]
 
 [[package]]
+name = "langcache"
+version = "0.13.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "httpcore" },
+    { name = "httpx" },
+    { name = "pydantic" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/b6/f0/b2a2a8ac3128549df3b1fee59cc418b20d5d0cd2c8aa3dac7f8289c85a80/langcache-0.13.0.tar.gz", hash = "sha256:55eaed1ac4d5ae52bbdc623e77950332ef3d4077cee34aa92bf0bbd449b25c61", size = 45079, upload-time = "2026-06-17T05:08:32.249Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/36/62/d8bd5947c77fd0effedec0e97efee33b1cf13e49f41e3d99d5a3f5b0badc/langcache-0.13.0-py3-none-any.whl", hash = "sha256:934b64df45607283168cda24d0234fa1c6ab96d63784a7a95ecf9d5c0b483d18", size = 74218, upload-time = "2026-06-17T05:08:31.25Z" },
+]
+
+[[package]]
 name = "latex2mathml"
 version = "3.81.0"
 source = { registry = "https://pypi.org/simple" }
@@ -3100,6 +3114,20 @@ wheels = [
 ]
 
 [[package]]
+name = "redis-agent-memory"
+version = "0.1.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "httpcore" },
+    { name = "httpx" },
+    { name = "pydantic" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/e1/a2/75d50a75d871d49b53f0e4aa4b03c3e4607f79ec7a0e291497ccffffc340/redis_agent_memory-0.1.1.tar.gz", hash = "sha256:e96cfa3713d9d526792296b72ed6a903c32307928e9e4512aea2fcc4079a1540", size = 59010, upload-time = "2026-06-26T10:31:36.45Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/36/3e/46131dbf96c2e76c132fe0aabc7b5712a21a2474ef53a40da6fe3661a67e/redis_agent_memory-0.1.1-py3-none-any.whl", hash = "sha256:08b988ecccd3faeffe4a521a7ccc9cd19135ca69ea6b0475cddfa01bfd4a7cb2", size = 109561, upload-time = "2026-06-26T10:31:34.92Z" },
+]
+
+[[package]]
 name = "referencing"
 version = "0.37.0"
 source = { registry = "https://pypi.org/simple" }
@@ -3406,6 +3434,7 @@ dependencies = [
     { name = "fastembed" },
     { name = "groq" },
     { name = "hydra-core" },
+    { name = "langcache" },
     { name = "liteparse" },
     { name = "llama-index" },
     { name = "llama-index-embeddings-huggingface" },
@@ -3414,6 +3443,7 @@ dependencies = [
     { name = "prek" },
     { name = "python-dotenv" },
     { name = "qdrant-client" },
+    { name = "redis-agent-memory" },
     { name = "rust-just" },
     { name = "sentence-transformers" },
     { name = "transformers" },
@@ -3427,6 +3457,7 @@ requires-dist = [
     { name = "fastembed", specifier = ">=0.8.0" },
     { name = "groq", specifier = ">=1.5.0" },
     { name = "hydra-core", specifier = ">=1.3.4" },
+    { name = "langcache", specifier = ">=0.13.0" },
     { name = "liteparse", specifier = ">=2.4.1" },
     { name = "llama-index", specifier = ">=0.14.23" },
     { name = "llama-index-embeddings-huggingface", specifier = ">=0.7.0" },
@@ -3435,6 +3466,7 @@ requires-dist = [
     { name = "prek", specifier = ">=0.4.8" },
     { name = "python-dotenv", specifier = ">=1.2.2" },
     { name = "qdrant-client", specifier = ">=1.18.0" },
+    { name = "redis-agent-memory", specifier = ">=0.1.1" },
     { name = "rust-just", specifier = ">=1.55.1" },
     { name = "sentence-transformers", specifier = ">=5.6.0" },
     { name = "transformers", specifier = ">=5.13.0" },

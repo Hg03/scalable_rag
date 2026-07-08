@@ -28,7 +28,7 @@ def answer_generator(
     ]
 
     response = client.chat.completions.create(
-        model=config.generate.llms.answer,
+        model=config.generate.llms.model,
         messages=messages,
         max_tokens=config.generate.llms.answer.max_tokens,
         temperature=config.generate.llms.answer.temperature,
