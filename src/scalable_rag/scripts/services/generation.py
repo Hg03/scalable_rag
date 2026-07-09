@@ -43,9 +43,9 @@ class GenerationService:
     def trigger(self, query: str) -> dict:
         """RAG pipeline with semantic cache and conversation memory"""
 
-        print("\n{'=' * 60}")
-        print("Question: {query}")
-        print("{'=' * 60}")
+        print(f"\n{'=' * 60}")
+        print(f"Question: {query}")
+        print(f"{'=' * 60}")
 
         # Step 0: Check semantic cache
         if self.enable_cache and self.cache:
@@ -132,12 +132,12 @@ if __name__ == "__main__":
 
     # First query
     result1 = service.trigger("What is Transformers?")
-    print("Answer 1: {result1['answer']}\nSource: {result1['source']}")
+    print(f"Answer 1: {result1['answer']}\nSource: {result1['source']}")
 
     # Second query (same topic) - should hit cache
     result2 = service.trigger("What is Transformers?")
-    print("Answer 2: {result2['answer']}\nSource: {result2['source']}")
+    print(f"Answer 2: {result2['answer']}\nSource: {result2['source']}")
 
     # Third query (different) - uses conversation context
     result3 = service.trigger("Tell me more about attention mechanism")
-    print("Answer 3: {result3['answer']}\nSource: {result3['source']}")
+    print(f"Answer 3: {result3['answer']}\nSource: {result3['source']}")
